@@ -2,8 +2,10 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 :root {
-    --white: #F2F2F2;
-    --black: #1a1a1a;
+  --primary: #FFCB74;
+  --white: #F6F6F6;
+  --black: #111111;
+  --black-light: #2F2F2F;
 }
 
 * {
@@ -32,7 +34,6 @@ body {
   width: 100%;
   height: 100vh;
   scroll-behavior: smooth;
-  overflow: hidden;
   background-color: var(--white);
 }
 
