@@ -9,10 +9,10 @@ import {
   Input,
   InputLabel,
   FormButton,
-  Button,
 } from "./styles";
 
 import BeersContext from "../../context";
+import { Button } from "../../components/Button/styles";
 
 function AddBeer() {
   const navigate = useNavigate();

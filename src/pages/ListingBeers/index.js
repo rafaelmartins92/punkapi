@@ -1,8 +1,12 @@
 import React, { useContext, useEffect } from "react";
-import { useNavigate } from "react-router";
 
 import {
-  Container,
+  HeroContainer,
+  HeroText,
+  HeroTitle,
+  HeroSubtitle,
+  HeroImage,
+  BeerListContainer,
   BeerContainer,
   BeerImage,
   BeerName,
@@ -12,8 +16,10 @@ import {
 import { GetBeers } from "../../services/beers";
 import BeersContext from "../../context";
 
+import hero from "../../assets/images/hero.png";
+import { Button } from "../../components/Button/styles";
+
 function ListingBeers() {
-  const navigate = useNavigate();
   const { beersList, setBeersList } = useContext(BeersContext);
 
   useEffect(() => {
@@ -26,15 +32,22 @@ function ListingBeers() {
     !beersList && setBeersList(responseGetBeers);
   }
 
-  function handleClick() {
-    navigate("/add-beer");
-  }
-
   return (
     <>
       {console.log("Listing Page: beersList", beersList)}
       <BeersContext.Provider value={{ beersList, setBeersList }}>
-        <Container>
+        <HeroContainer className="container">
+          <HeroText>
+            <HeroTitle>Cansado de não saber qual gelada escolher?</HeroTitle>
+            <HeroSubtitle>
+              Relaxa, a gente preparou uma listinha com as melhores pra você!
+            </HeroSubtitle>
+            <Button to="/add-beer">Cadastrar cerveja</Button>
+          </HeroText>
+
+          <HeroImage src={hero} alt="" />
+        </HeroContainer>
+        <BeerListContainer className="container">
           {beersList &&
             beersList.map((beer) => (
               <BeerContainer key={beer.id}>
@@ -43,7 +56,7 @@ function ListingBeers() {
                 <BeerDescription>{beer.description}</BeerDescription>
               </BeerContainer>
             ))}
-        </Container>
+        </BeerListContainer>
       </BeersContext.Provider>
     </>
   );

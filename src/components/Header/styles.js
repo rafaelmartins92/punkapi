@@ -8,6 +8,7 @@ export const Container = styled.div`
   top: 0;
   left: 0;
   right: 0;
+  z-index: 999;
 `;
 
 export const HeaderContainer = styled.div`
@@ -25,6 +26,7 @@ export const Link = styled(NavLink)`
   padding: 1.6rem;
   display: inline-block;
   text-transform: uppercase;
+  font-size: 1.2rem;
   font-weight: 500;
 
   &.active {
