@@ -32,4 +32,8 @@ export const Link = styled(NavLink)`
   &.active {
     border-bottom: 4px solid var(--primary);
   }
+
+  @media (max-width: 475px) {
+    font-size: 1rem;
+  }
 `;
