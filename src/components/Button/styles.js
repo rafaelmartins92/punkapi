@@ -26,4 +26,8 @@ export const Button = styled(Link)`
       border: none;
     }
   }
+
+  @media (max-width: 975px) {
+    margin: 0 auto;
+  }
 `;
