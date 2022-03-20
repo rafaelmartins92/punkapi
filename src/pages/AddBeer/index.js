@@ -4,10 +4,13 @@ import { useNavigate } from "react-router";
 import {
   Container,
   FormContainer,
+  FormTitle,
+  FormSubtitle,
   FormFields,
   InputBox,
   Input,
   InputLabel,
+  Buttons,
   FormButton,
 } from "./styles";
 
@@ -45,12 +48,14 @@ function AddBeer() {
       <BeersContext.Provider
         value={{ beersList, setBeersList, inputVal, setInputValue }}
       >
-        <Container>
+        <Container className="container">
           <FormContainer onSubmit={addNewBeer}>
-            <h2>Conhece alguma cerveja que deveria estar na nossa lista?</h2>
-            <p className="">
+            <FormTitle>
+              Conhece alguma cerveja que deveria estar na nossa lista?
+            </FormTitle>
+            <FormSubtitle className="">
               Ajude os outros cervejeiros e adiciona essa delícia ai! 🍻
-            </p>
+            </FormSubtitle>
             <FormFields>
               <InputBox className="input-box">
                 <Input
@@ -110,10 +115,14 @@ function AddBeer() {
                   Descrição da cerveja
                 </InputLabel>
               </InputBox>
-              <FormButton type="submit" className="button">
-                Adicionar
-              </FormButton>
-              <Button to="/">Voltar</Button>
+              <Buttons className="buttons">
+                <Button to="/" className="secondary">
+                  Voltar para lista
+                </Button>
+                <FormButton type="submit" className="button">
+                  Adicionar cerveja
+                </FormButton>
+              </Buttons>
             </FormFields>
           </FormContainer>
         </Container>

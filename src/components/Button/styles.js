@@ -16,4 +16,14 @@ export const Button = styled(Link)`
   :hover {
     opacity: 0.8;
   }
+
+  &.secondary {
+    background: none;
+    border: 2px solid var(--primary);
+
+    :hover {
+      background: var(--black);
+      border: none;
+    }
+  }
 `;
