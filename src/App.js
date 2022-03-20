@@ -7,6 +7,7 @@ import ListingBeers from "./pages/ListingBeers";
 import AddBeer from "./pages/AddBeer";
 
 import BeersContext from "./context";
+import Header from "./components/Header";
 
 function App() {
   const [beersList, setBeersList] = useState();
@@ -29,6 +30,7 @@ function App() {
             setInputValue,
           }}
         >
+          <Header />
           <Routes>
             <Route path="/" element={<ListingBeers />} />
             <Route path="/add-beer" element={<AddBeer />} />

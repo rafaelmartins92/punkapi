@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   display: flex;
@@ -65,5 +66,15 @@ export const FormButton = styled.button`
   padding: 1.6rem 2.4rem;
   border-radius: 24px;
   text-transform: uppercase;
+  font-weight: 500;
+`;
+
+export const Button = styled(Link)`
+  background: var(--black);
+  color: var(--primary);
+  padding: 1.6rem 2.4rem;
+  border-radius: 24px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
   font-weight: 500;
 `;

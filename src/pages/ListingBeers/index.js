@@ -34,7 +34,6 @@ function ListingBeers() {
     <>
       {console.log("Listing Page: beersList", beersList)}
       <BeersContext.Provider value={{ beersList, setBeersList }}>
-        <button onClick={handleClick}>Add Beer Page</button>
         <Container>
           {beersList &&
             beersList.map((beer) => (

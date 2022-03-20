@@ -1,0 +1,33 @@
+import styled from "styled-components";
+import { NavLink } from "react-router-dom";
+
+export const Container = styled.div`
+  background: var(--black);
+  color: var(--primary);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+`;
+
+export const HeaderContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const ImageLogo = styled.img`
+  width: 40px;
+`;
+
+export const Link = styled(NavLink)`
+  color: var(--primary);
+  padding: 1.6rem;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  &.active {
+    border-bottom: 4px solid var(--primary);
+  }
+`;

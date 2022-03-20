@@ -9,6 +9,7 @@ import {
   Input,
   InputLabel,
   FormButton,
+  Button,
 } from "./styles";
 
 import BeersContext from "../../context";
@@ -112,6 +113,7 @@ function AddBeer() {
               <FormButton type="submit" className="button">
                 Adicionar
               </FormButton>
+              <Button to="/">Voltar</Button>
             </FormFields>
           </FormContainer>
         </Container>
