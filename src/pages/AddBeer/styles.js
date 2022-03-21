@@ -55,7 +55,7 @@ export const InputBox = styled.div`
 
 export const Input = styled.input`
   background: none;
-  border: none;
+  border-radius: 0;
   outline: none;
   border-bottom: 1px solid var(--black);
   color: var(--black-light);
