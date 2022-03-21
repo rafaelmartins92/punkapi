@@ -44,7 +44,6 @@ function ListingBeers() {
             </HeroSubtitle>
             <Button to="/add-beer">Cadastrar cerveja</Button>
           </HeroText>
-
           <HeroImage src={hero} alt="" />
         </HeroContainer>
         <BeerListContainer className="container">

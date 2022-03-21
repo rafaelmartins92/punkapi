@@ -55,7 +55,7 @@ export const BeerListContainer = styled.div`
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 3.2rem;
-  margin: 3.2rem auto;
+  padding: 3.2rem 1.6rem;
 `;
 
 export const BeerContainer = styled.div`
@@ -65,13 +65,33 @@ export const BeerContainer = styled.div`
   align-items: center;
   min-width: 280px;
   width: 280px;
+  background-color: var(--white-light);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 15%);
 `;
 
 export const BeerImage = styled.img`
   height: 24rem;
 `;
 
-export const BeerName = styled.h2`
+export const BeerName = styled.h3`
   margin: 1.6rem 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 700;
 `;
-export const BeerDescription = styled.p``;
+export const BeerDescription = styled.p`
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 68px;
+  color: var(--black-light);
+  font-size: 14px;
+  font-weight: 500;
+`;
