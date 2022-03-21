@@ -54,7 +54,7 @@ function AddBeer() {
               Conhece alguma cerveja que deveria estar na nossa lista?
             </FormTitle>
             <FormSubtitle className="">
-              Ajude os outros cervejeiros e adiciona essa delícia ai! 🍻
+              Ajuda os outros cervejeiros e adiciona essa delícia ai! 🍻
             </FormSubtitle>
             <FormFields>
               <InputBox className="input-box">
