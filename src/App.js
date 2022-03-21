@@ -33,7 +33,7 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<ListingBeers />} />
-            <Route path="/add-beer" element={<AddBeer />} />
+            <Route path="/cadastrar-cerveja" element={<AddBeer />} />
           </Routes>
         </BeersContext.Provider>
       </BrowserRouter>

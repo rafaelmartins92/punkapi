@@ -42,7 +42,7 @@ function ListingBeers() {
             <HeroSubtitle>
               Relaxa, a gente preparou uma listinha com as melhores pra você!
             </HeroSubtitle>
-            <Button to="/add-beer">Cadastrar cerveja</Button>
+            <Button to="/cadastrar-cerveja">Cadastrar cerveja</Button>
           </HeroText>
           <HeroImage src={hero} alt="" />
         </HeroContainer>

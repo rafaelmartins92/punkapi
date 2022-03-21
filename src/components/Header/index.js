@@ -18,7 +18,7 @@ function Header() {
           </a>
           <nav>
             <Link to="/">Todas cervejas</Link>
-            <Link to="/add-beer">Cadastrar cerveja</Link>
+            <Link to="/cadastrar-cerveja">Cadastrar cerveja</Link>
           </nav>
         </HeaderContainer>
       </Container>
