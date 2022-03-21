@@ -18,6 +18,7 @@ export const HeroText = styled.div`
 
   @media (max-width: 975px) {
     width: 100%;
+    margin-bottom: 2.4rem;
   }
 `;
 
@@ -55,7 +56,6 @@ export const BeerListContainer = styled.div`
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 3.2rem;
-  padding: 3.2rem 1.6rem;
 `;
 
 export const BeerContainer = styled.div`
@@ -63,11 +63,11 @@ export const BeerContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 280px;
-  width: 280px;
+  min-width: 28rem;
+  width: 28rem;
   background-color: var(--white-light);
-  padding: 16px;
-  border-radius: 8px;
+  padding: 1.6rem;
+  border-radius: 0.8rem;
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 15%);
 `;
 
@@ -82,7 +82,7 @@ export const BeerName = styled.h3`
   -webkit-box-orient: vertical;
   overflow: hidden;
   color: var(--black);
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
 `;
 export const BeerDescription = styled.p`
@@ -90,8 +90,8 @@ export const BeerDescription = styled.p`
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  height: 68px;
+  height: 6.8rem;
   color: var(--black-light);
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 500;
 `;
