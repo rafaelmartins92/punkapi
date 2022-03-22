@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+<h1 align="center">
+    <img alt="Logo" src="img/logo.svg" />
+    <br>az
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="https://www.linkedin.com/in/rafael-martins92/">
+  <img alt="Made By" src="https://img.shields.io/static/v1?label=Made%20By&message=Rafael%20Martins&color=orange&style=for-the-badge">
+	</a>
+  
+  <img alt="Languages" src="https://img.shields.io/github/languages/count/rafaelmartins92/punkapi?style=for-the-badge">
+  
+  <img alt="Top Language" src="https://img.shields.io/github/languages/top/rafaelmartins92/punkapi?style=for-the-badge">
+  
+  <img alt="Repo Size" src="https://img.shields.io/github/repo-size/rafaelmartins92/punkapi?style=for-the-badge">
+  
+  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/rafaelmartins92/punkapi?style=for-the-badge">
+</p>
 
-## Available Scripts
+<h4 align="center">
+  <p>Code Boost - Redesign Banco punkapi</p>
 
-In the project directory, you can run:
+  <p>This was a study project done in Code Boost.</p>
 
-### `npm start`
+  <p>This project was aimed at improving my skill in HTML and SASS.</p>
+</h4>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p align="center">
+  <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#eyes-check-it-out">Check it out</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-how-to-use">How to use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
+</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p align="center">
+  <img alt="Scene" src="portfolio-scene---punkapi@2x.png">
+</p>
 
-### `npm test`
+## :rocket: Technologies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project was developed with the following technologies:
 
-### `npm run build`
+- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [SASS](https://sass-lang.com/)
+- [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## :eyes: Check it Out
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You can try it here:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Rafael Martins | Punk API][demo]
 
-### `npm run eject`
+## :information_source: How to use
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/) installed on your computer. From your command line:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# Clone this repository
+$ git clone https://github.com/rafaelmartins92/punkapi.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Go into the repository folder
+$ cd punkapi
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Install all the dependencies
+$ npm i
 
-## Learn More
+# Run the application
+$ npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# The application will start on "http://localhost:3000"
+```
+## :information_source: How to test
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To run the test with [Cypress](https://docs.cypress.io/), you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/). From your command line:
 
-### Code Splitting
+```bash
+# Clone this repository
+$ git clone https://github.com/rafaelmartins92/punkapi.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Go into the repository folder
+$ cd punkapi
 
-### Analyzing the Bundle Size
+# Install all the dependencies
+$ npm i
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Run the application
+$ npm start
 
-### Making a Progressive Web App
+# The application will start on "http://localhost:3000"
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## :memo: License
 
-### Advanced Configuration
+This project is under the MIT license. See the [LICENSE](https://github.com/rafaelmartins92/punkapi/blob/master/LICENSE) for more information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+<h4 align="center">
+    Made with ♥ by Rafael Martins 👋 <a href="https://www.linkedin.com/in/rafael-martins92/" target="_blank">Get in touch!</a>
+</h4>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[vc]: https://code.visualstudio.com/
+[vceditconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+[vceslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+[demo]: https://punkapi-rafaelmartins.netlify.app/
