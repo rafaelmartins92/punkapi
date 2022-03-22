@@ -64,6 +64,7 @@ function AddBeer() {
                 <InputBox className="input-box">
                   <Input
                     type="text"
+                    id="image_url"
                     className="image_url"
                     name="image_url"
                     placeholder="URL da imagem"
@@ -84,6 +85,7 @@ function AddBeer() {
                 <InputBox className="input-box">
                   <Input
                     type="text"
+                    id="name"
                     className="name"
                     name="name"
                     placeholder="Nome da cerveja"
@@ -102,6 +104,7 @@ function AddBeer() {
                 <InputBox className="input-box">
                   <Input
                     type="text"
+                    id="description"
                     className="description"
                     name="description"
                     placeholder="Descrição da cerveja"
@@ -123,7 +126,11 @@ function AddBeer() {
                   <Button to="/" className="secondary">
                     Voltar para lista
                   </Button>
-                  <FormButton type="submit" className="button">
+                  <FormButton
+                    type="submit"
+                    className="button"
+                    id="btn-add_beer"
+                  >
                     Adicionar cerveja
                   </FormButton>
                 </Buttons>

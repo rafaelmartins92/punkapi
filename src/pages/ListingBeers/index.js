@@ -40,13 +40,15 @@ function ListingBeers() {
   return (
     <>
       <BeersContext.Provider value={{ beersList, setBeersList }}>
-        <HeroContainer>
+        <HeroContainer id="hero_container">
           <HeroText data-aos="fade-right" data-aos-duration="2000">
             <HeroTitle>Cansado de não saber qual gelada escolher?</HeroTitle>
             <HeroSubtitle>
               Relaxa, a gente preparou uma listinha com as melhores pra você!
             </HeroSubtitle>
-            <Button to="/cadastrar-cerveja">Cadastrar cerveja</Button>
+            <Button to="/cadastrar-cerveja" id="btn-go_to_add_beer">
+              Cadastrar cerveja
+            </Button>
           </HeroText>
           <HeroImage
             src={hero}
