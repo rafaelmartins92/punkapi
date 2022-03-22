@@ -48,86 +48,99 @@ function AddBeer() {
         value={{ beersList, setBeersList, inputVal, setInputValue }}
       >
         <Container>
-          <FormContainer
-            onSubmit={addNewBeer}
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          >
-            <FormTitle>
-              Conhece alguma cerveja que deveria estar na nossa lista?
-            </FormTitle>
-            <FormSubtitle>
-              Ajuda os outros cervejeiros e adiciona essa delícia ai! 🍻
-            </FormSubtitle>
-            <FormFields>
-              <InputBox className="input-box">
-                <Input
-                  type="text"
-                  className="image_url"
-                  name="image_url"
-                  placeholder="URL da imagem"
-                  defaultValue={inputVal.image_url}
-                  onChange={handleChange}
-                  onInvalid={(e) =>
-                    e.target.setCustomValidity(
-                      "A gente precisa da URL da imagem da cerveja"
-                    )
-                  }
-                  onInput={(e) => e.target.setCustomValidity("")}
-                  required
-                />
-                <InputLabel htmlFor="image_url">
-                  URL da imagem da cerveja
-                </InputLabel>
-              </InputBox>
-              <InputBox className="input-box">
-                <Input
-                  type="text"
-                  className="name"
-                  name="name"
-                  placeholder="Nome da cerveja"
-                  defaultValue={inputVal.name}
-                  onChange={handleChange}
-                  onInvalid={(e) =>
-                    e.target.setCustomValidity(
-                      "A gente precisa do nome da cerveja"
-                    )
-                  }
-                  onInput={(e) => e.target.setCustomValidity("")}
-                  required
-                />
-                <InputLabel htmlFor="name">Nome da cerveja</InputLabel>
-              </InputBox>
-              <InputBox className="input-box">
-                <Input
-                  type="text"
-                  className="description"
-                  name="description"
-                  placeholder="Descrição da cerveja"
-                  defaultValue={inputVal.description}
-                  onChange={handleChange}
-                  onInvalid={(e) =>
-                    e.target.setCustomValidity(
-                      "A gente precisa de uma descrição pra cerveja"
-                    )
-                  }
-                  onInput={(e) => e.target.setCustomValidity("")}
-                  required
-                />
-                <InputLabel htmlFor="description">
-                  Descrição da cerveja
-                </InputLabel>
-              </InputBox>
-              <Buttons className="buttons">
-                <Button to="/" className="secondary">
-                  Voltar para lista
-                </Button>
-                <FormButton type="submit" className="button">
-                  Adicionar cerveja
-                </FormButton>
-              </Buttons>
-            </FormFields>
-          </FormContainer>
+          {beersList ? (
+            <FormContainer
+              onSubmit={addNewBeer}
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              <FormTitle>
+                Conhece alguma cerveja que deveria estar na nossa lista?
+              </FormTitle>
+              <FormSubtitle>
+                Ajuda os outros cervejeiros e adiciona essa delícia ai! 🍻
+              </FormSubtitle>
+              <FormFields>
+                <InputBox className="input-box">
+                  <Input
+                    type="text"
+                    className="image_url"
+                    name="image_url"
+                    placeholder="URL da imagem"
+                    defaultValue={inputVal.image_url}
+                    onChange={handleChange}
+                    onInvalid={(e) =>
+                      e.target.setCustomValidity(
+                        "A gente precisa da URL da imagem da cerveja"
+                      )
+                    }
+                    onInput={(e) => e.target.setCustomValidity("")}
+                    required
+                  />
+                  <InputLabel htmlFor="image_url">
+                    URL da imagem da cerveja
+                  </InputLabel>
+                </InputBox>
+                <InputBox className="input-box">
+                  <Input
+                    type="text"
+                    className="name"
+                    name="name"
+                    placeholder="Nome da cerveja"
+                    defaultValue={inputVal.name}
+                    onChange={handleChange}
+                    onInvalid={(e) =>
+                      e.target.setCustomValidity(
+                        "A gente precisa do nome da cerveja"
+                      )
+                    }
+                    onInput={(e) => e.target.setCustomValidity("")}
+                    required
+                  />
+                  <InputLabel htmlFor="name">Nome da cerveja</InputLabel>
+                </InputBox>
+                <InputBox className="input-box">
+                  <Input
+                    type="text"
+                    className="description"
+                    name="description"
+                    placeholder="Descrição da cerveja"
+                    defaultValue={inputVal.description}
+                    onChange={handleChange}
+                    onInvalid={(e) =>
+                      e.target.setCustomValidity(
+                        "A gente precisa de uma descrição pra cerveja"
+                      )
+                    }
+                    onInput={(e) => e.target.setCustomValidity("")}
+                    required
+                  />
+                  <InputLabel htmlFor="description">
+                    Descrição da cerveja
+                  </InputLabel>
+                </InputBox>
+                <Buttons className="buttons">
+                  <Button to="/" className="secondary">
+                    Voltar para lista
+                  </Button>
+                  <FormButton type="submit" className="button">
+                    Adicionar cerveja
+                  </FormButton>
+                </Buttons>
+              </FormFields>
+            </FormContainer>
+          ) : (
+            <FormContainer data-aos="fade-up" data-aos-duration="2000">
+              <FormTitle>
+                Opa, parece que você ainda não viu quais geladas estão na nossa
+                lista!
+              </FormTitle>
+              <FormSubtitle>Melhor conferir lá primeiro! 😉</FormSubtitle>
+              <Button to="/" className="primary">
+                Conferir nossa lista
+              </Button>
+            </FormContainer>
+          )}
         </Container>
       </BeersContext.Provider>
     </>

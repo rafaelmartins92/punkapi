@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import GlobalStyle from "./styles/global";
@@ -10,6 +10,9 @@ import DetailsBeer from "./pages/DetailsBeer";
 import BeersContext from "./context";
 import Header from "./components/Header";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function App() {
   const [beersList, setBeersList] = useState();
   const [inputVal, setInputValue] = useState({
@@ -17,6 +20,11 @@ function App() {
     image_url: "",
     name: "",
     description: "",
+  });
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
   });
 
   return (
