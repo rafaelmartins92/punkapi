@@ -48,7 +48,7 @@ function AddBeer() {
       <BeersContext.Provider
         value={{ beersList, setBeersList, inputVal, setInputValue }}
       >
-        <Container className="container">
+        <Container>
           <FormContainer onSubmit={addNewBeer}>
             <FormTitle>
               Conhece alguma cerveja que deveria estar na nossa lista?

@@ -12,13 +12,17 @@ export const Container = styled.div`
 `;
 
 export const HeaderContainer = styled.div`
+  width: 100%;
+  max-width: 124.8rem;
+  padding: 0 1.6rem;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 `;
 
 export const ImageLogo = styled.img`
-  width: 40px;
+  width: 4rem;
 `;
 
 export const Link = styled(NavLink)`

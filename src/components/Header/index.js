@@ -8,7 +8,7 @@ function Header() {
   return (
     <>
       <Container>
-        <HeaderContainer className="container">
+        <HeaderContainer>
           <a
             href="https://rafaelmartins92.github.io/portfolio/"
             target="_blank"

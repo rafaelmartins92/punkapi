@@ -41,13 +41,6 @@ body {
 html {
   font-size: 62.5%;
 }
-
-.container {
-  width: 100%;
-  max-width: 124.8rem;
-  padding: 0 1.6rem;
-  margin: 0 auto;
-}
 `;
 
 export default GlobalStyle;

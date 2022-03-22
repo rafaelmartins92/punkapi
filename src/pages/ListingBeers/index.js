@@ -17,7 +17,8 @@ import { GetBeers } from "../../services/beers";
 import BeersContext from "../../context";
 
 import hero from "../../assets/images/hero.png";
-import { Button } from "../../components/Button/styles";
+import { Button, SeeMore } from "../../components/Button/styles";
+import { Link } from "react-router-dom";
 
 function ListingBeers() {
   const { beersList, setBeersList } = useContext(BeersContext);
@@ -36,7 +37,7 @@ function ListingBeers() {
     <>
       {console.log("Listing Page: beersList", beersList)}
       <BeersContext.Provider value={{ beersList, setBeersList }}>
-        <HeroContainer className="container">
+        <HeroContainer>
           <HeroText>
             <HeroTitle>Cansado de não saber qual gelada escolher?</HeroTitle>
             <HeroSubtitle>
@@ -46,13 +47,26 @@ function ListingBeers() {
           </HeroText>
           <HeroImage src={hero} alt="" />
         </HeroContainer>
-        <BeerListContainer className="container">
+        <BeerListContainer>
           {beersList &&
             beersList.map((beer) => (
               <BeerContainer key={beer.id}>
-                <BeerImage src={beer.image_url} alt="" />
+                <BeerImage
+                  src={beer.image_url}
+                  alt={"Image da cerveja " + beer.name}
+                />
                 <BeerName>{beer.name}</BeerName>
                 <BeerDescription>{beer.description}</BeerDescription>
+                <SeeMore
+                  to={"/detalhes-cerveja"}
+                  state={{
+                    image_url: beer.image_url,
+                    name: beer.name,
+                    description: beer.description,
+                  }}
+                >
+                  Ver mais
+                </SeeMore>
               </BeerContainer>
             ))}
         </BeerListContainer>

@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const HeroContainer = styled.div`
+  width: 100%;
+  max-width: 124.8rem;
+  padding: 0 1.6rem;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,15 +51,24 @@ export const HeroImage = styled.img`
 
   @media (max-width: 475px) {
     height: auto;
+    margin-top: 3.2rem;
   }
 `;
 
 export const BeerListContainer = styled.div`
+  width: 100%;
+  max-width: 124.8rem;
+  padding: 0 1.6rem 3.2rem;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 3.2rem;
+
+  @media (max-width: 975px) {
+    padding-bottom: 3.2rem;
+  }
 `;
 
 export const BeerContainer = styled.div`
@@ -94,4 +107,5 @@ export const BeerDescription = styled.p`
   color: var(--black-light);
   font-size: 1.4rem;
   font-weight: 500;
+  margin-bottom: 1.6rem;
 `;

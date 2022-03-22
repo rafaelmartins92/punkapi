@@ -1,6 +1,19 @@
 import styled from "styled-components";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  width: 100%;
+  max-width: 124.8rem;
+  padding: 16rem 1.6rem 3.2rem;
+  margin: 0 auto;
+
+  @media (max-width: 600px) {
+    padding-top: 8rem;
+  }
+
+  @media (max-width: 475px) {
+    padding: 4rem 1.6rem;
+  }
+`;
 
 export const FormContainer = styled.form`
   display: flex;
@@ -9,15 +22,6 @@ export const FormContainer = styled.form`
   width: 100%;
   max-width: 57rem;
   margin: auto;
-  padding-top: 16rem;
-
-  @media (max-width: 600px) {
-    padding-top: 8rem;
-  }
-
-  @media (max-width: 475px) {
-    padding: 4rem 0;
-  }
 `;
 
 export const FormTitle = styled.h2`
@@ -60,7 +64,7 @@ export const Input = styled.input`
   border-bottom: 1px solid var(--black);
   color: var(--black-light);
   width: 100%;
-  font-size: 14px;
+  font-size: 1.4rem;
 
   &::placeholder {
     color: transparent;

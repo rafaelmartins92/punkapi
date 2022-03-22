@@ -5,6 +5,7 @@ import GlobalStyle from "./styles/global";
 
 import ListingBeers from "./pages/ListingBeers";
 import AddBeer from "./pages/AddBeer";
+import DetailsBeer from "./pages/DetailsBeer";
 
 import BeersContext from "./context";
 import Header from "./components/Header";
@@ -34,6 +35,7 @@ function App() {
           <Routes>
             <Route path="/" element={<ListingBeers />} />
             <Route path="/cadastrar-cerveja" element={<AddBeer />} />
+            <Route path="/detalhes-cerveja" element={<DetailsBeer />} />
           </Routes>
         </BeersContext.Provider>
       </BrowserRouter>
