@@ -44,16 +44,19 @@ function AddBeer() {
 
   return (
     <>
-      {console.log("Add Beer Page: beersList", beersList)}
       <BeersContext.Provider
         value={{ beersList, setBeersList, inputVal, setInputValue }}
       >
         <Container>
-          <FormContainer onSubmit={addNewBeer}>
+          <FormContainer
+            onSubmit={addNewBeer}
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <FormTitle>
               Conhece alguma cerveja que deveria estar na nossa lista?
             </FormTitle>
-            <FormSubtitle className="">
+            <FormSubtitle>
               Ajuda os outros cervejeiros e adiciona essa delícia ai! 🍻
             </FormSubtitle>
             <FormFields>

@@ -18,7 +18,7 @@ function DetailsBeer() {
   return (
     <>
       <Container>
-        <CardContainer>
+        <CardContainer data-aos="fade-up" data-aos-duration="2000">
           <BeerImage
             src={beerInfo.image_url}
             alt={"Image da cerveja " + beerInfo.name}
