@@ -18,17 +18,21 @@ function DetailsBeer() {
   return (
     <>
       <Container>
-        <CardContainer data-aos="fade-up" data-aos-duration="2000">
-          <BeerImage
-            src={beerInfo.image_url}
-            alt={"Image da cerveja " + beerInfo.name}
-          />
-          <BeerText>
-            <BeerName>{beerInfo.name}</BeerName>
-            <BeerDescription>{beerInfo.description}</BeerDescription>
-            <Button to="/">Voltar para lista</Button>
-          </BeerText>
-        </CardContainer>
+        {beerInfo ? (
+          <CardContainer data-aos="fade-up" data-aos-duration="2000">
+            <BeerImage
+              src={beerInfo.image_url}
+              alt={"Image da cerveja " + beerInfo.name}
+            />
+            <BeerText>
+              <BeerName>{beerInfo.name}</BeerName>
+              <BeerDescription>{beerInfo.description}</BeerDescription>
+              <Button to="/">Voltar para lista</Button>
+            </BeerText>
+          </CardContainer>
+        ) : (
+          (window.location.href = "/")
+        )}
       </Container>
     </>
   );
