@@ -14,7 +14,10 @@ function Header() {
             target="_blank"
             rel="noreferrer"
           >
-            <ImageLogo src={logo} alt="" />
+            <ImageLogo
+              src={logo}
+              alt="Logo de Rafael Martins, letra R na cor branca e letra M na cor amarela"
+            />
           </a>
           <nav>
             <Link to="/">Todas cervejas</Link>

@@ -45,7 +45,10 @@ function ListingBeers() {
             </HeroSubtitle>
             <Button to="/cadastrar-cerveja">Cadastrar cerveja</Button>
           </HeroText>
-          <HeroImage src={hero} alt="" />
+          <HeroImage
+            src={hero}
+            alt="Desenho 3D de um homem feliz com uma mão na cintura e a outra apontando para o texto principal da pagina"
+          />
         </HeroContainer>
         <BeerListContainer>
           {beersList &&
