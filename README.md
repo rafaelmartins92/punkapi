@@ -1,6 +1,6 @@
 <h1 align="center">
-    <img alt="Logo" src="img/logo.svg" />
-    <br>az
+    <img alt="Logo" src="logo.png" />
+    <br>
 </h1>
 
 <p align="center">
@@ -18,17 +18,26 @@
 </p>
 
 <h4 align="center">
-  <p>Code Boost - Redesign Banco punkapi</p>
+  <p>Front-end Challenge | Punk API</p>
 
-  <p>This was a study project done in Code Boost.</p>
+  <p>This application was developed during a front-end challenge.</p>
 
-  <p>This project was aimed at improving my skill in HTML and SASS.</p>
+  <p>The challenge was to consume the Punk API (https://api.punkapi.com/v2) and create two pages.</p>
+
+  <p>One of them should list all the beers from the api. Showing the name, image and description from each beer.</p>
+
+  <p>The second one should give to the user the possibility to register a new beer on the existing list.</p>
+
+  <p>To solve this problem I decided to use Hooks to manipulated the states from React JS, and Context API to send states between components.</p>
+
+  <p>In additional that, I created some tests end-to-end with Cypress.</p>
 </h4>
 
 <p align="center">
   <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#eyes-check-it-out">Check it out</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#information_source-how-to-use">How to use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-how-to-test">How to test</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-license">License</a>
 </p>
 
@@ -41,7 +50,10 @@
 This project was developed with the following technologies:
 
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-- [SASS](https://sass-lang.com/)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [React JS](https://reactjs.org/)
+- [Styled-Components](https://styled-components.com/)
+- [Cypress](https://docs.cypress.io/)
 - [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
 
 ## :eyes: Check it Out
@@ -71,7 +83,7 @@ $ npm start
 ```
 ## :information_source: How to test
 
-To run the test with [Cypress](https://docs.cypress.io/), you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/). From your command line:
+To run the tests with [Cypress](https://docs.cypress.io/), you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/). From your command line:
 
 ```bash
 # Clone this repository
@@ -87,6 +99,13 @@ $ npm i
 $ npm start
 
 # The application will start on "http://localhost:3000"
+
+# Run the tests
+$ npm test
+
+# The application will open Cypress
+
+# Cypress will run the test on the browser
 ```
 
 ## :memo: License
