@@ -18,7 +18,6 @@ import BeersContext from "../../context";
 
 import hero from "../../assets/images/hero.png";
 import { Button, SeeMore } from "../../components/Button/styles";
-import { Link } from "react-router-dom";
 
 function ListingBeers() {
   const { beersList, setBeersList } = useContext(BeersContext);
@@ -35,7 +34,6 @@ function ListingBeers() {
 
   return (
     <>
-      {console.log("Listing Page: beersList", beersList)}
       <BeersContext.Provider value={{ beersList, setBeersList }}>
         <HeroContainer>
           <HeroText>
